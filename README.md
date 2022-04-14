@@ -31,9 +31,9 @@ GET     /
 POST    /api/crawl
 ```
 
-GET /  <http://localhost:9000/> is a mock API with a response "Welcome to Scala Web Crawler"
+GET     / ----------- <http://localhost:9000/> is a mock API with a response "Welcome to Scala Web Crawler"
 
-POST /api/crawl <http://localhost:9000/api/crawl> has the below request/response format:
+POST    /api/crawl ----------- <http://localhost:9000/api/crawl> has the below request/response format:
 Request
 
 ```Request
@@ -87,7 +87,7 @@ Akka Actor receives the message, it enqueues the message inside its mailbox, the
 message handler concurrently.
 
 With increase in load, the number of actors spawned can be increased, also better optimising can be adding using routing
-algorithms and supervision strategies whenever the system needs to be scale.
+algorithms and supervision strategies whenever the system needs to be scaled.
 
 The web crawling is handled using scalascraper, which utilizes a browser implementation based on jsoup, for parsing html
 pages. The browser object is then used to make a web client and fetch the entire web page using the browser
